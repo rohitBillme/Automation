@@ -1,0 +1,27 @@
+	public static void OfflineCampaigns_banner() {
+			
+		driver.get("https://billmepartner.com/auto-engage/bannerInBill");
+		String BannerPage = driver.getCurrentUrl();
+		
+		if("https://billmepartner.com/auto-engage/bannerInBill".equals(BannerPage)) {
+			System.out.println("Success !! on Banner in bill Page");
+		} else {
+			System.out.println("Banner in page load failure");
+		}
+				
+	}
+	
+	different methd to map 
+	Import different classes or use extend function to call that function
+	
+	
+	//*[@id="page-content-wrapper"]/div/div/div[5]/table
+	
+	
+	
+	1. Bills Page--> Customer (phone | email)
+	Array initialize and data read
+	2. customer profilling and check (this is done)
+	
+	List<String> where = new ArrayList<String>();
+	where.add( ContactsContract.Contacts.HAS_PHONE_NUMBER+"=1" );
